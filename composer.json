@@ -1,0 +1,33 @@
+{
+    "name": "gumphp/think-dump-server",
+    "description": "thinkphp dump-server",
+    "type": "library",
+    "require": {
+        "topthink/framework": "^v6.1",
+        "symfony/var-dumper": "^4.2|^v6.0",
+        "symfony/console": "^5.4|^v6.1"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "gumphp\\dumpserver\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "gumphp",
+            "email": "gumphp@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "extra": {
+        "think": {
+            "services": [
+                "gumphp\\dumpserver\\DumpServerService"
+            ],
+            "config": {
+                "dump-server": "./config/dump-server.php"
+            }
+        }
+    }
+}
